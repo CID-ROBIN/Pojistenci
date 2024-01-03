@@ -1,0 +1,2 @@
+# Pojistenci
+Rozvíjení aplikace pojištěnci.
