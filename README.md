@@ -1,6 +1,9 @@
 # Pojistenci
-Rozvíjení aplikace pojištěnci.
+Rozvíjení aplikace pojištěnci. 
 
+                    
+                    Nedokážu se vyznat v tom jak udělat aby tu zůstaly starý updaty kódu a šlo přepínat mezi jednotlivýma verzema.
+                    Poslední update mě pravděpodobně přepsal ten předchozí kterej už nejde asi ani najít.
                     /*
                      
                     část kódu kdy nebude uživatel moct zadat zápornou hodnotu do věku,
