@@ -14,15 +14,16 @@ public class DatabazePojistenych {
     // použít collekci ArrayList
     
     // svůj arraylist s metodama na přidání, vyhledávání a mazání
-    
+    /**
+     * založení ArrayListu s údaji ze třídy Pojistenec
+     */
     private ArrayList<Pojistenec> pojistenci = new ArrayList<>();
     
-    /*
-    public class pojistenec {
-        public ArrayList<String> pojistenci;
-        
-    }
-    */
+    // metoda na přidání pojištěnce do ArrayListu
+    /**
+     * 
+     * @param pojisteneci metoda na přidání údajů ze třídy Pojištěnec do ArrayListu
+     */
     public void pridej(Pojistenec pojisteneci) {
         
         
@@ -30,7 +31,12 @@ public class DatabazePojistenych {
     }
     
     
-    
+    // metoda na vypsání pojištěnců z ArrayListu
+    /**
+     * metoda na vypsání pojištěnců z ArrayListu
+     * pomocí for cyklu
+     * @return vrací údaje pojištěnců ( jméno, přijmení, telefon, věk )
+     */
     public String vypis() {
         String vypis = "";
         
@@ -40,7 +46,14 @@ public class DatabazePojistenych {
         return vypis;
     }
 
-    
+    // metoda na najití pojištěnce v ArrayListu
+    /**
+     * metoda na najití pojištěnce v ArrayListu
+     * s použitím for cyklu a podmínky if
+     * @param jmeno parametr pro jméno pojištěnce
+     * @param prijmeni parametr pro přijmení pojištěnce
+     * @return vrátí parametry pojištěnce ( jméno, přijmení, telefon, věk )
+     */
     public Pojistenec hledej(String jmeno, String prijmeni) {
         for (Pojistenec pojistenec : pojistenci) {
             if (pojistenec.getJmeno().equals(jmeno) && pojistenec.getPrijmeni().equals(prijmeni)) {
@@ -50,13 +63,5 @@ public class DatabazePojistenych {
     return null;
     }
     
-    /*
-/ na databázi použít kolekci ArrayList nebo něco hodně podobnýho 
-co bude podporovat vkládání a mazání záznamů u kolekce + vyhledávání a vypisování z kolekce
-
-    mohl by to být ten ArrayList nebo možná spojový seznam LinkedList ale ten možná ani ne
-    
-    
-*/
     
 }
